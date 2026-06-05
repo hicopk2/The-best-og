@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>101001</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <button style="float: left; background-color: red;">
+      <a style="color: white;" href=
+        >Source</a
+      >
+    </button>
+    <button
+      onclick="aboutBlank(window.location.href, 'embed')"
+      style="float: right;"
+    >
+      Open in new tab
+    </button>
+  </head>
+  <body>
+    <div id="title">
+      <img
+        src="logo.png"
+        width="50%"
+        style="display: block; margin-left: 20%; margin-right: auto;"
+      />
+      <p><em>"The return of the king. The king is in beta"</em></p>
+    </div>
+    <div id="hub-menu">
+      <ul>
+       
+      </ul>
+      <div id="custom-url">></div>
+    </div>
+    <div id="game-menu">
+      <ul>
+        
+        <li>
+          <button id="fullscreen-btn" onclick="toggleFullscreen()">
+            Fullscreen
+          </button>
+        </li>
+        <input
+          id="url-input"
+          placeholder="https://example.com"
+          type="url"
+          style="width: 30%;"
+        />
+        <button
+          id="url-insite"
+          onclick="loadGame(document.getElementById('url-input').value)"
+        >
+          Open below
+        </button>
+        <button
+          id="url-newtab"
+          onclick="aboutBlank((document.getElementById('url-input').value), 'embed')"
+        >
+          Open in cloaked tab
+        </button>
+      </ul>
+    </div>
+
+    <div id="game-container">
+      <!-- Placeholder for the game content -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
